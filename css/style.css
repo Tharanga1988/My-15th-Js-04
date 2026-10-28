@@ -1,0 +1,101 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: radial-gradient(circle at top left, #0f172a 40%, #1e293b 60%, #0f172a 30%);
+  color: #f8fafc;
+  padding: 24px;
+}
+
+.game-card {
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 16px;
+  padding: 32px;
+  width: 100%;
+  max-width: 420px;
+  -webkit-box-sizing: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
+          box-sizing: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+.game-card-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #38bdf1;
+  margin: 8px;
+}
+.game-card-subtitle {
+  font-size: 15px;
+  color: #94a3b8;
+  margin-bottom: 24px;
+}
+.game-card-btn {
+  width: 100%;
+  padding: 14px 24px;
+  background-color: #0284c7;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  -webkit-transition: background-color 0.2 ease, -webkit-transform 0.1s ease;
+  transition: background-color 0.2 ease, -webkit-transform 0.1s ease;
+  transition: background-color 0.2 ease, transform 0.1s ease;
+  transition: background-color 0.2 ease, transform 0.1s ease, -webkit-transform 0.1s ease;
+}
+.game-card-btn:hover {
+  background-color: #0369a1;
+}
+.game-card-btn:active {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+}
+.game-card-log {
+  margin-top: 24px;
+  background-color: #0f172a;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: left;
+  max-height: 180px;
+  overflow-y: auto;
+  border: 1px solid #334155;
+  display: none;
+}
+.game-card-log p {
+  font-size: 15px;
+  margin: 6px;
+  line-height: 1.4;
+}
+.game-card-log p:last-child {
+  margin-bottom: 0;
+}
+
+.log-info {
+  color: #ffffff;
+}
+.log-high {
+  color: #f87171;
+}
+.log-low {
+  color: #fbbf24;
+}
+.log-success {
+  color: #4ade80;
+  font-weight: 600;
+}/*# sourceMappingURL=style.css.map */

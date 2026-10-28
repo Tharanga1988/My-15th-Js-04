@@ -1,0 +1,113 @@
+//Variables
+$bg-main: #0f172a;
+$bg-card: #1e293b;
+$border-color: #334155;
+$text-primary: #f8fafc;
+$text-secondary: #94a3b8;
+$accent-color: #0284c7;
+$accent-hover: #0369a1;
+
+$color-high: #f87171;
+$color-low: #fbbf24;
+$color-success: #4ade80;
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle at top left, $bg-main 40%, $bg-card 60%, $bg-main 30%);
+    color: $text-primary;
+    padding: 24px;
+}
+
+.game-card {
+    background: $bg-card;
+    border: 1px solid $border-color;
+    border-radius: 16px;
+    padding: 32px;
+    width: 100%;
+    max-width: 420px;
+    box-sizing: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
+    text-align: center;
+
+    &-title {
+        font-size: 28px;
+        font-weight: 700;
+        color: #38bdf1;
+        margin: 8px;
+    }
+
+    &-subtitle {
+        font-size: 15px;
+        color: $text-secondary;
+        margin-bottom: 24px;
+    }
+
+    &-btn {
+        width: 100%;
+        padding: 14px 24px;
+        background-color: $accent-color;
+        color: #ffffff;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background-color 0.2 ease, transform 0.1s ease;
+        
+        &:hover {
+            background-color: $accent-hover;
+        }
+
+        &:active {
+            transform: scale(0.98);
+        }
+    }
+
+    &-log {
+        margin-top: 24px;
+        background-color: $bg-main;
+        border-radius: 8px;
+        padding: 16px;
+        text-align: left;
+        max-height: 180px;
+        overflow-y: auto;
+        border: 1px solid $border-color;
+        display: none; //default hidden
+
+        p {
+            font-size: 15px;
+            margin: 6px;
+            line-height: 1.4;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+//log items
+.log {
+    &-info {
+        color: #ffffff;
+    }
+    &-high {
+        color: $color-high;
+    }
+    &-low {
+        color: $color-low;
+    }
+    &-success {
+        color: $color-success;
+        font-weight: 600;
+    }
+}
